@@ -119,9 +119,9 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static')#تعريف ملف الستاتيك
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'project/static')#مسار الستاتيك
-]
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR,'project/static')#مسار الستاتيك
+# ]
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
