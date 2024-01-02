@@ -116,12 +116,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')#تعريف ملف الستاتيك
+# STATIC_ROOT = os.path.join(BASE_DIR,'static')#تعريف ملف الستاتيك
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'project/static')#مسار الستاتيك
-]
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+ STATIC_ROOT ="staticfiles"
+
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR,'project/static')#مسار الستاتيك
+# ]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Default primary key field type
