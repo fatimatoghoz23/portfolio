@@ -510,6 +510,7 @@ footer p {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
+    position:relative;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -574,9 +575,13 @@ footer p {
   }
   #contact{
     margin-top:300px ;
+        position:relative;
+
   }
   #projects{
     height: 500px;
+        position:relative;
+
   }
  
   
@@ -669,6 +674,8 @@ footer p {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  position:relative;
+
 }
 .skills .container{
   display: flex;
