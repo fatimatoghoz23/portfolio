@@ -426,8 +426,10 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+#projects .details-container {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
 }
 
 .color-container {
@@ -451,6 +453,7 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  height: 50px;
 }
 
 /* CONTACT */
@@ -510,7 +513,6 @@ footer p {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
-    position:relative;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -573,23 +575,26 @@ footer p {
   .about-containers {
     margin-top: 0;
   }
-  #contact{
-    margin-top:300px ;
-        position:relative;
-
-  }
+  
   #projects{
-    height: 500px;
-        position:relative;
-
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
   }
  
   
 }
+
+#contact,
+footer {
+  height: max-content;
+  position: relative;
+  margin-top: 50px;
+}
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: max-content;
   }
   #profile {
     height: 83vh;
@@ -648,14 +653,9 @@ footer p {
     text-align: justify;
     margin-top: 40px;
   }
-  #contact{
-    margin-top:700px ;
-  }
+  
   .nav-links{
-    margin-top: 200px;
-  }
-  #email{
-    font-size: 12px;
+    margin-top: 100px;
   }
   .imggg{
     position: relative;
@@ -670,32 +670,31 @@ footer p {
 }
 
 .skills{
-  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
-  position:relative;
-
 }
 .skills .container{
-  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
   gap: 40px;
-
+}
+ .title{
+  margin-top: 120px;
 }
 .container .card{
   position: relative;
   width: 220px;
   height: 250px;
-  background-color: #424040;
-  display: flex;
   justify-content: center;
   align-items: center;
 
 }
+section,
+  .section-container {
+    height: fit-content;
+  }
 .container .card .percent{
   position: absolute;
   width: 150px;
