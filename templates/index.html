@@ -684,10 +684,8 @@ footer p {
   min-height: 70vh;
 }
 .skills .container{
-  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-wrap: wrap;
   gap: 40px;
 
@@ -1019,7 +1017,7 @@ flex-wrap: wrap;
    </div>
    </div>
     </section>
-<!--     <h1 class="title">My Skills</h1>
+    <h1 class="title">My Skills</h1>
     <section class="skills" id="experience"  style="position :relative;">
      <div class="container">
       <div class="card">
@@ -1135,13 +1133,36 @@ flex-wrap: wrap;
 
       </div>
      </div>
-     </section> -->
+     </section> 
      
     <section id="projects" style="height:1200px ;margin-top:250px;position: relative;">
       <p class="section__text__p1" style="color:  rgb(218, 200, 200);">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+             <div class="details-container ">
+            <div class="article-container">
+             <img class="project-img" src="{% static  'images/11.png' %}" style="height: 300px;">
+             <!-- <div class="box"> to create a resume and apply for job opportunities or to create company and job postings
+            </div> -->
+</div>
+            <h2 class="experience-sub-title project-title" style="color: #fff;">Car Store</h2>
+          
+            <div class="btn-container">
+              <button style="color: #fff;"
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button style="color: #fff;"
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
           <div class="details-container" style="  background-image:linear-gradient(rgba(254, 248, 248, 0.608),#7a5959b7);
 ">
             <div class="article-container">
@@ -1165,13 +1186,13 @@ flex-wrap: wrap;
             <div class="btn-container">
               <button style="color: #fff;"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/fatimatoghoz23/Ecommerce-Website'"
+                onclick="location.href='https://github.com/fatimatoghoz23/cars-ecommerce'"
               >
                 Github
               </button>
               <button style="color: #fff;"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='http://mobilesecommerce.pythonanywhere.com/'"
+                onclick="location.href='https://fatimatoghoz23.github.io/cars-ecommerce/'"
               >
                 Live Demo
               </button>
