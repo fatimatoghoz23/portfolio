@@ -426,9 +426,9 @@ article .icon {
 
 /* PROJECTS SECTION */
 #projects{
-  position: relative;
+  /* position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill , minmax(400px,1fr)); */
 }
 #projects .details-container {
   position: relative;
@@ -442,7 +442,7 @@ article .icon {
 }
 
 .project-img {
-  width: 100%;
+  width: 90%;
   height: 90%;
   border-radius: 10px;
   box-shadow:0 20px 15px rgb(0 0 0 / 10%) ;
@@ -679,20 +679,22 @@ footer {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill , minmax(70px,1fr));
+  gap: 180px;
+  width: 100%;
 }
  .title{
   margin-top: 80px;
 }
 .container .card{
   position: relative;
-  width: 220px;
-  height: 250px;
+  width: 100px;
+  height: 200px;
   justify-content: center;
   align-items: center;
-
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
+  gap: 40px;}
 section,
   .section-container {
     height: fit-content;
