@@ -283,7 +283,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1rem;
 
 }
 
@@ -481,6 +481,25 @@ article .icon {
   0 0 30px #424040;
 }
 
+ .skills1  {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+  gap: 20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.skills1 .contact-info-upper-container{
+  padding: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .contact-info-container {
   display: flex;
   align-items: center;
@@ -523,7 +542,7 @@ footer p {
 }
 
 @media screen and (max-width: 1200px) {
-  .about-details-container {
+  .about-details-cont ainer {
     width: 300px;
   }
   #desktop-nav {
@@ -583,7 +602,10 @@ footer p {
     height: max-content;
     
   }
- 
+  #contact
+   {
+    height: max-content;
+  }
   
 }
 
@@ -606,7 +628,6 @@ footer {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
     margin-bottom: 2rem;
   }
   .about-containers,
@@ -668,104 +689,29 @@ footer {
   .about-content .info{
     padding-right: 0;
   }
+  .skills .container{
  
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
+    gap: 0;
+  }
 }
 
-.skills{
+/* .skills{
   justify-content: center;
   align-items: center;
-}
-.skills .container{
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(70px,1fr));
-  gap: 180px;
-  width: 100%;
-}
+} */
+
  .title{
   margin-top: 80px;
 }
-.container .card{
-  position: relative;
-  width: 100px;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
-  gap: 40px;}
+
 section,
   .section-container {
     height: fit-content;
   }
-.container .card .percent{
-  position: absolute;
-  width: 150px;
-  height: 150px;
-}
-.container .card .percent svg{
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  transform: rotate(270deg);
-
-}
-
-.container .card .percent svg circle{
-  width: 100%;
-  height: 100%;
-  fill:transparent ;
-  stroke-width: 2;
-  stroke: rgb(62, 63, 64);
-  transform: translate(5px,5px);
-}
-.container .card .percent svg circle:nth-child(2){
-  stroke: var(--clr);
-  stroke-dasharray: 440;
-  stroke-dashoffset: calc(440 - (440 * var(--num))/100);
-  opacity: 0;
-  animation: fadeIn 1s linear forwards;
-}
-@keyframes fadeIn{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-.dot{
-  position: absolute;
-  inset: 5px;
-  z-index: 10;
-  /* transform: rotate(calc(3.6deg * var(--num))); */
-  animation: animateDot 2s linear forwards;
-}
 
 
-@keyframes animateDot{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(calc(3.6deg * var(--num)));
-  }
-}
-.dot::before{
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--clr);
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 200px 0 200px var(--clr),
-  130px 0 120px var(--clr);
-}
 .number{
   position: absolute;
   inset: 0;
