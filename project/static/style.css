@@ -425,7 +425,11 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
+#projects{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+}
 #projects .details-container {
   position: relative;
   display: grid;
@@ -578,8 +582,7 @@ footer p {
   
   #projects{
     height: max-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+    
   }
  
   
@@ -681,7 +684,7 @@ footer {
   gap: 40px;
 }
  .title{
-  margin-top: 120px;
+  margin-top: 80px;
 }
 .container .card{
   position: relative;
