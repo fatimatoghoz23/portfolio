@@ -433,7 +433,8 @@ article .icon {
 #projects .details-container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill , minmax(330px,1fr));
+  justify-content: center;
 }
 
 .color-container {
@@ -442,7 +443,7 @@ article .icon {
 }
 
 .project-img {
-  width: 90%;
+  width: 100%;
   height: 90%;
   border-radius: 10px;
   box-shadow:0 20px 15px rgb(0 0 0 / 10%) ;
