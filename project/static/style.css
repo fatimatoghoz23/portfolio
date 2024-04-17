@@ -113,7 +113,6 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  z-index:1;
 }
 
 .menu-links a {
@@ -466,8 +465,9 @@ article .icon {
 
 #contact {
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  position: relative;
+  bottom: 0;
+  height: max-content;
 }
 
 .contact-info-upper-container {
@@ -485,19 +485,19 @@ article .icon {
 
  .skills1  {
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill , minmax(300px,2fr));
+  gap: 10px;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 .skills1 .contact-info-upper-container{
-  padding: 50px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  padding: 40px;
+  width: 90px;
+  height: 70px;
+  border-radius: 20%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -608,7 +608,15 @@ footer p {
    {
     height: max-content;
   }
-  
+  .skills1  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(170px,2fr));
+    gap: 10px;}
+    .skills1 .contact-info-upper-container{
+      padding: 40px;
+      width: 80px;
+      height: 60px;}
+
 }
 
 #contact,
@@ -691,12 +699,7 @@ footer {
   .about-content .info{
     padding-right: 0;
   }
-  .skills .container{
  
-    display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
-    gap: 0;
-  }
 }
 
 /* .skills{
